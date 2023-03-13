@@ -1,27 +1,75 @@
 <!DOCTYPE html>
 <html lang = "en">
   <!-- Name: Ashley Gatterman -->
-  <!-- Program Purpose: This is my PVCC index file. It will have links to all of my HTML and Python programs. -->
+  <!-- Program Purpose: This is my PVCC index file. It will have 
+    links to all of my HTML and Python programs. -->
   
   <head>
     
     <title> Ashley Gatterman </title>
-    
+    <style>
+        body {background-color: #27181d;
+        font-family: arial, helvetica, sans-serif;
+        margin-top: 0px;
+        }
+    h1 {color: #faf9fb; font-size: 1.15em; margin-left: 1em;}
+    h2 {color: #faf9fb; font-size: 1em; margin-left: 2.5em;}
+    h3 {font-size: .95em; margin-left:2em;}
+    ul {margin-left: 2em;}
+    table {
+        width: 800px;
+        font-size: 1.3em;
+        font-weight: bold;
+        background-color: #27181d;
+        margin:auto;
+        border: 1px solid #b4858a;
+    }
+
+    a {text-decoration: none;}
+    a:link {color: #ffffff;}
+    a:visited {color:#e2a7ae;}
+    a:hover {color: #fc558d;}
+    a:active {color: #923957;}
+
+    td {
+        color:#e2a7ae;
+        padding-left: 5px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    </style>
   </head>
-  <body style = "color: #faf9fb; background-color: #27181d; font-family: arial, helvetica, sans-serif; ">
-    
-    <h1> Ashley Gatterman </h1>
-    <h2>CSC 110 Web Pages</h2>
-    
-    <h3>
-      <ul>
-        <li style = "color:#a7747b"><a href = "helloworld.html">Hello World</a></li>
-        <li style = "color:#a7747b"><a href = "bagels.html">Bagels</a></li>
-        <li style = "color:#a7747b"><a href = "githubinfo.html">GitHub Info</a></li>
-        <li style = "color:#a7747b"><a href = "planets.html">Planets</a></li>
-        <li style = "color:#a7747b"><a href = "opsys.html">OpSys</a></li>
-        <li style = "color:#a7747b"><a href = "contactus.html">Contact Us</a></li>
-      </ul>
-    </h3>
+  <body>
+        <table>
+            <tr style = "background-color: #50323c;">
+                <td><a href="index.html">Home</a></td>
+                <td><a href="https://www.pvcc.edu">PVCC</a></td>
+                <td><a href="https://www.w3schools.com/html/">W3 Schools</a></td>
+                <td><a href="contactus.html">Contact Us</a></td>
+            </tr>
+
+            <tr><td colspan = "4">
+                <h1>Ashley Gatterman</h1>
+                <h2>CSC 110 Web Pages</h2>
+                <h3>
+                    <ul>
+                        <li><a href = "helloworld.html">Hello World</a></li>
+                        <li><a href = "bagels.html">Bagels</a></li>
+                        <li><a href = "planets.html">Planets</a></li>
+                        <li>more here...</li>
+                        <li>more here...</li>
+                    </ul>
+                </h3>
+              
+                <h2>Chapter Terms</h2>
+                <h3>
+                    <ul>
+                        <li><a href = "opsys.html">OpSys</a></li>
+                        <li>more here...</li>
+                        <li>more here...</li>
+                    </ul>
+                </h3>
+            </td></tr>
+        </table>
   </body>
 </html>
