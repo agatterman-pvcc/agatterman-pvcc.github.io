@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang = "en">
+<!-- Name: Ashley Gatterman
+	Program Purpose: CSC 110 HTML Project - Chapter 5 Programming Algorithms & Software Testing} -->
+	
+    <head>
+		<title>Chapter 5</title>
+		<style>
+            body {
+                background-color: #241b1e;
+                color: #ffffff;
+                font-family: sans-serif, 'Gill Sans MT', 'Trebuchet MS';
+                font-weight: bold;
+            }
+            h1 {color: #ffffff; font-size: 1.4em; }
+            h2 {color: #d19fb5; font-size: 1.3em; margin-left: .75em; margin-bottom:.4em;}
+            h3 {color: #d19fb5; font-size: 1.15em; margin-left: 1.5em; margin-bottom:.4em;}
+            table {
+                font-size: 1.05em;
+                line-height: 1.7;
+                width: fit-content;
+            }
+            ul {
+                margin-top: 0em;
+                margin-bottom: -.2em;
+                margin-left: 1em;
+                list-style-type: none;
+            }
+            li {
+                margin-bottom: .1em;
+            }
+			table,td {
+				border-collapse: collapse;
+			}
+			th,td {
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+			th {
+				text-align: center;
+                background-color: #61434f;
+                font-size: 1.15em;
+                border: 1px solid;
+                border-color: #dce0e0;
+			}
+            a:link {color: #cfa0b6;}
+            a:visited {color:#503c4d;}
+            a:hover {color: #c95578;}
+            a:active {color: #b12c54;}
+            td {
+                padding-left: 5px;
+            }
+		</style>
+	</head>
+	<body>
+		<table>
+            <tr>
+                <th colspan="2"><h1>Chapter 5: Programming Algorithms & Software Testing</h1></th>
+            </tr>
+            <tr>
+                <td colspan = "2">
+                    <h2>Phases of computer program development</h2>
+                    <ul style="font-weight: normal;">
+                        <li><b>Phase 1</b>: Understand the problem</li>
+                        <li><b>Phase 2</b>: Define an algorithm to solve the problem</li>
+                        <li><b>Phase 3:</b> Write the program code in appropriate language based on the algorithm</li>
+                        <li><b>Phase 4</b>: Enter the program and save</li>
+                        <li><b>Phase 5</b>: Execute the program</li>
+                        <li><b>Phase 6</b>: Test the program, find errors and debug, then retest</li>
+                        <li><b>Phase 7</b>: Document and evaluate the program</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td colspan = "2">
+                    <h2>Programming structures</h2>
+                    <ul>
+                        <li>Sequential structure: Top-down execution</li>
+                        <li>Decision structures: if / then / else</li>
+                        <li>Iterative (Looping):<li>
+                            <ul style="font-weight: normal;">
+                                <li>while loop: continue looping as long as something is true</li>
+                                <li>repeat/until loop: continue looping until something is true</li>
+                                <li>for loop: loop a given number of times</li>
+                            </ul>
+                        <li>Recursive structures:</li>
+                            <ul style="font-weight: normal;">
+                                <li>Repeat a set of instructions as a subtask of itself</li>
+                                <li>Repetition continues until:</li>
+                                    <ul>
+                                        <li>degenerative case, which is a termination condition, is met</li>
+                                        <li>(degenerative case is also called a "base case")</li>
+                                    </ul>
+                            </ul>
+                    </ul>
+                </td>
+			</tr>
+            <tr>
+                <td colspan = "2">
+                    <h2>Two classic programming / database problems</h2>
+                    <ul>
+                        <li>Sorting: Descending order / Ascending order</li>
+                            <ul style="font-weight: normal;">
+                                <li>Sorting numbers</li>
+                                <li>Sorting strings (in accordance with ASCII values)</li>
+                            </ul>
+                        <li>Searching: find specific data that meet a certain criteria</li>
+                            <ul style="font-weight: normal;">
+                                <li>In database:</li>
+                                    <ul>
+                                        <li>Filters: temporary search</li>
+                                        <li>Queries: search criteria are saved so they don't have to be recreated</li>
+                                    </ul>
+                            </ul>
+                        <li>Two popular search techniques:</li>
+                            <ul style="font-weight: normal;">
+                                <li>Sequential search: search from top to bottom or bottom to top, one item at a time</li>
+                                <li>Binary search:</li>
+                                    <ul>
+                                        <li>only works if data is SORTED first</li>
+                                        <li>start in the middle, then go to half of that, etc.</li>
+                                    </ul>
+                            </ul>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td colspan = "2">
+                    <h2>Programming structures</h2>
+                    <ul>
+                        <li>Efficiency: Program takes minimal time and/or resources</li>
+                        <li>Correctness: Program runs in expected ways and works for all expected conditions</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td colspan = "2">
+                    <h2 style="margin-bottom: -.4em;">Software testing and verification</h2>
+                    <h3>Kinds of tests:</h3>
+                    <ul style="margin-left: 1.2em; font-weight: normal; list-style-type: circle;">
+                        <li><b>Acceptance testing</b>: Verifying whether the whole system works as intended</li>
+                        <li><b>Integration testing</b>: Ensuring that software components or functions operate together</li>
+                        <li><b>Unit testing</b>: Validating that each software unit performs as expected</li>
+                        <li><b>Functional testing</b>: Checking functions by emulating business scenarios, based on functional requirements</li>
+                        <li><b>Performance testing</b>: Testing how the software performs under different workloads</li>
+                        <li><b>Regression testing</b>: Checking whether new features break or degrade functionality</li>
+                        <li><b>Stress testing</b>: Testing how much strain the system can take before it fails</li>
+                        <li><b>Usability testing</b>: Validating how well a customer can use a system or web application to complete a task</li>
+                    </ul>
+                    <h3>Software testing is done to detect:</h3>
+                    <ul style="margin-left: 1.2em;">
+                        <li>Architectural flaws</li>
+                        <li>Poor design decisions</li>
+                        <li>Invalid or incorrect funtionality</li>
+                        <li>Scalability issues</li>
+                        </ul>
+                    <h3>Testing best practices:</h3>
+                    <ul style="margin-left: 1.2em; font-weight: normal; list-style-type: circle;">
+                        <li><b>Continuous testing</b>: Project teams test each build as it becomes available</li>
+                        <li><b>Configuration management</b>: Organizations maintain test assets and track what software builds to test</li>
+                        <li><b>Service virtualization</b>: Testing environments may not be available, especially early in code development</li>
+                        <li><b>Defect or "bug tracking"</b>:  Important to testing and development teams for measuring and improving quality</li>
+                        <li><b>Metrics and reporting</b>: Reporting and analytics enable team members to share status, goals and test results</li>
+                        </ul>
+                    <h3><a href="https://www.ibm.com/topics/software-testing">From: IBM What is software testing?</a></h3>
+                </td>
+            </tr>
+		</table>
+	</body>
+</html>
